@@ -7,7 +7,6 @@ import { filterProducts, unfilterProducts } from '../../../features/productsSlic
 
 const Categories = ({categories}) => {
     const [isChecked, setIsChecked] = useState(true);
-    const { products, filteredProducts } = useSelector(state => state.products)
     const dispatch = useDispatch();
 
     const handleSelect = (e) => {

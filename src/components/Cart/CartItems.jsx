@@ -29,7 +29,7 @@ const CartItems = () => {
     <CartContainer>
         <CartHeader>
           <CartTitle>Shopping Cart</CartTitle>
-          <ContinueShoppingLink href=''>
+          <ContinueShoppingLink href='/products/products'>
           <FontAwesomeIcon icon={faChevronLeft} />
             Continue Shopping
             </ContinueShoppingLink>

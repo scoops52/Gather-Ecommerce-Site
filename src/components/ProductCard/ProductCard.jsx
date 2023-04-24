@@ -3,7 +3,7 @@ import { CardWrapper, ProductDetails, ProductImage, ProductInfo, ProductName, Pr
 
 const ProductCard = ({product}) => {
   return (
-    <CardWrapper href='/'>
+    <CardWrapper href={{ pathname: '/products/productId', query: {productId: product.id} }} key={product.id} >
         <ProductImage src={product.image} alt='product' />
         <ProductInfo>
             <ProductName>{product.title}</ProductName>

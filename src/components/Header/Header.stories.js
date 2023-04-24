@@ -6,4 +6,4 @@ export default {
     component: Header,
 }
 
-export const Gather = () => <Header navItems={['Home', 'Products', 'About', 'Contact']}  />
+export const Gather = () => <Header />

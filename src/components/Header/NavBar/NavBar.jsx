@@ -7,7 +7,7 @@ const NavBar = ({navItems}) => {
     <NavBarStyled>
         {navItems.map((item) => (
             <li key={item}>
-                <NavLink label={item} href={item} />
+                <NavLink label={item.toUpperCase()} href={`/${item}/${item}`} />
             </li>
         ))}
     </NavBarStyled>
