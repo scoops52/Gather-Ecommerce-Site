@@ -3,7 +3,7 @@ import { useRouter } from 'next/router'
 import React from 'react'
 import { useSelector } from 'react-redux';
 
-const productId = () => {
+const ProductId = () => {
   const { products } = useSelector(state => state.products)
   const router = useRouter();
   const { productId } = router.query;
@@ -26,4 +26,4 @@ const productId = () => {
   )
 }
 
-export default productId
+export default ProductId

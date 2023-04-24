@@ -8,12 +8,12 @@ import { increase, decrease } from '../../../../features/cartSlice';
 
 const CartItemQuantity = ({amt, id}) => {
     const dispatch = useDispatch();
-    // const [ amt, setAmt ] = useState(1);
+
 
    
     const handleIncrease = () => dispatch(increase(id));
     const handleDecrease = () => {amt > 1 ? dispatch(decrease(id)) : null;}
-    /* using redux dispatch clear from cart on amt === 0 */
+
 
   return (
     <QuantityWrapper>

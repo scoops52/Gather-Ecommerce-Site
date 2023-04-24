@@ -12,8 +12,7 @@ const ProductGrid = () => {
 
   useEffect(() => {
     dispatch(getProducts());
-    console.log(products);
-  }, []);
+  },[dispatch]);
 
   if (isLoading) {
     return (

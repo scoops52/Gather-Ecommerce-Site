@@ -20,7 +20,7 @@ const CartItems = () => {
 
   useEffect(() => {
     dispatch(calculateTotals());
-  }, [cartItems])
+  }, [cartItems, dispatch])
 
 
   return (

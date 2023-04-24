@@ -1,12 +1,12 @@
 import React from 'react'
 import { CardInfoWrapper, InputLabel, SharedInputWrapper } from './CreditCard.styles'
-import { CardType } from './CreditCardType/CreditCardType.stories'
+import CreditCardType from './CreditCardType/CreditCardType'
 import Input from '../../../Input/Input'
 
 const CreditCard = () => {
     return (
         <CardInfoWrapper>
-            <CardType />
+            <CreditCardType />
             <InputLabel>Name on card</InputLabel>
             <Input glass type='text' placeholder='Name' required />
             <InputLabel>Card Number</InputLabel>

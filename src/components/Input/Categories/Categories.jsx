@@ -27,7 +27,7 @@ const Categories = ({categories}) => {
     <CategoriesContainer>
         <h4>Filter by Category</h4>
         {categories.map(category => (
-            <CategoryWrapper>
+            <CategoryWrapper key={category}>
             <Checkbox 
                 id={category} 
                 value={category} 
@@ -35,7 +35,7 @@ const Categories = ({categories}) => {
                 onChange={handleSelect}
                 />
             <CheckboxLabel>{category.toUpperCase()}</CheckboxLabel>
-        </CategoryWrapper>
+         </CategoryWrapper>
         ))}
     </CategoriesContainer>
   )
